@@ -121,6 +121,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &80368609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 80368610}
+  m_Layer: 0
+  m_Name: Back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &80368610
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80368609}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.267, y: -0.554, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 615606485}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &100796987
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,7 +161,8 @@ GameObject:
   m_Component:
   - component: {fileID: 100796988}
   - component: {fileID: 100796989}
-  m_Layer: 0
+  - component: {fileID: 100796990}
+  m_Layer: 8
   m_Name: Mossy - TileSet_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,6 +234,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &100796990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100796987}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.51, z: 1.19}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &615606484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 615606485}
+  m_Layer: 0
+  m_Name: GroundChecks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &615606485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615606484}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1633106708}
+  - {fileID: 1178470702}
+  - {fileID: 80368610}
+  m_Father: {fileID: 1867072141}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &674139139
 GameObject:
   m_ObjectHideFlags: 3
@@ -249,7 +326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 1.8899999, z: -8.139999}
+  m_FollowOffset: {x: 0, y: 1.319, z: -8.139999}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -306,7 +383,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 716616293}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,14 +488,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808602832}
-  m_LocalRotation: {x: 0.113824874, y: 0.000000039060783, z: -0.0000000044751736,
-    w: 0.9935008}
-  m_LocalPosition: {x: 3.29, y: 2.6999998, z: -7.8099995}
+  m_LocalRotation: {x: 0.08023516, y: -0.000000012085511, z: 0.000000010698429, w: 0.996776}
+  m_LocalPosition: {x: 3.29, y: 2.129, z: -7.8099995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 13.0720005, y: 0, z: 0}
 --- !u!114 &808602836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,7 +538,8 @@ GameObject:
   m_Component:
   - component: {fileID: 945823510}
   - component: {fileID: 945823511}
-  m_Layer: 0
+  - component: {fileID: 945823512}
+  m_Layer: 8
   m_Name: Mossy - TileSet_1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -534,6 +611,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &945823512
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945823509}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.51, z: 1.19}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1057988918
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,7 +634,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1057988919}
   - component: {fileID: 1057988920}
-  m_Layer: 0
+  - component: {fileID: 1057988921}
+  m_Layer: 8
   m_Name: Mossy - TileSet_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -616,6 +707,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1057988921
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057988918}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.51, z: 1.19}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1127023842
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,7 +730,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1127023843}
   - component: {fileID: 1127023844}
-  m_Layer: 0
+  - component: {fileID: 1127023845}
+  m_Layer: 8
   m_Name: Mossy - TileSet_1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,6 +803,49 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1127023845
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127023842}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.51, z: 1.19}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1178470701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1178470702}
+  m_Layer: 0
+  m_Name: Front
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1178470702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178470701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.298, y: -0.554, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 615606485}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1314313086
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +856,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1314313087}
   - component: {fileID: 1314313088}
-  m_Layer: 0
+  - component: {fileID: 1314313089}
+  m_Layer: 8
   m_Name: Mossy - TileSet_1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -780,6 +929,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1314313089
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314313086}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.51, z: 1.19}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1360528100
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,7 +952,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1360528101}
   - component: {fileID: 1360528102}
-  m_Layer: 0
+  - component: {fileID: 1360528103}
+  m_Layer: 8
   m_Name: Mossy - TileSet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -862,6 +1025,49 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1360528103
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360528100}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.51, z: 1.19}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1633106707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1633106708}
+  m_Layer: 0
+  m_Name: Center
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1633106708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633106707}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.554, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 615606485}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1654291331
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,15 +1127,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654291331}
-  m_LocalRotation: {x: 0.113824874, y: 0.000000039060783, z: -0.0000000044751736,
-    w: 0.9935008}
-  m_LocalPosition: {x: 3.29, y: 2.6999998, z: -7.8099995}
+  m_LocalRotation: {x: 0.08023516, y: -0.000000012085511, z: 0.000000010698429, w: 0.996776}
+  m_LocalPosition: {x: 3.29, y: 2.129, z: -7.8099995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 674139140}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 6.9560003, y: 0, z: 0}
 --- !u!1 &1842033893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,6 +1238,10 @@ GameObject:
   - component: {fileID: 1867072141}
   - component: {fileID: 1867072140}
   - component: {fileID: 1867072139}
+  - component: {fileID: 1867072144}
+  - component: {fileID: 1867072143}
+  - component: {fileID: 1867072145}
+  - component: {fileID: 1867072142}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -1120,10 +1329,77 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.29, y: 0.81, z: 0.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 615606485}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20.628, y: 0, z: 0}
+--- !u!136 &1867072142
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867072138}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.32692307
+  m_Height: 1.1153846
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1867072143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867072138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 660618b1306a4144a0998a1cbf95b111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalSpeed: 3
+  flipped: 0
+  groundChecks:
+  - {fileID: 1178470702}
+  - {fileID: 80368610}
+  maxGroundDistance: 0.1
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  jumpSpeed: 4
+  animator: {fileID: 1867072139}
+--- !u!114 &1867072144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867072138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a267a2c2d284bf2bd1a6f303174fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: {fileID: 1867072143}
+--- !u!54 &1867072145
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867072138}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 104
+  m_CollisionDetection: 0
 --- !u!1 &1920903278
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,7 +1410,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1920903279}
   - component: {fileID: 1920903280}
-  m_Layer: 0
+  - component: {fileID: 1920903281}
+  m_Layer: 8
   m_Name: Mossy - TileSet_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1206,3 +1483,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1920903281
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920903278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.51, z: 1.19}
+  m_Center: {x: 0, y: 0, z: 0}
