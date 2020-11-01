@@ -12,10 +12,13 @@ public class PlayerController : MonoBehaviour
              //déplacement droite-gauche
              var h = Input.GetAxisRaw("Horizontal");
              movement.Move(h, 0);
-             if (Input.GetButtonDown("Jump"))
+             
+             //jump
+             if (Input.GetButtonDown("Jump") || (Input.GetButtonDown("Vertical") && Input.GetAxis("Vertical") > 0))
                  movement.Jump();
 
-             if(Input.GetKey(KeyCode.LeftControl))
+             //Sit
+             if(Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.DownArrow))
              {
                  if(_pressTime < _pressTimeTollerance)
                  {
@@ -26,7 +29,7 @@ public class PlayerController : MonoBehaviour
                      movement.Sit();
                  }
              }
-             else if(Input.GetKeyUp(KeyCode.LeftControl))
+             else if(Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.DownArrow))
              {
                  if(_pressTime < _pressTimeTollerance)
                  {

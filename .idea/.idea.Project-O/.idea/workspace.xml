@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="037780d3-4145-403d-a571-bc16cc3e7567" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Hero.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Hero.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-O/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-O/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-O/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-O/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Hero.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Hero.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroIdle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroIdle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroJumping.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroJumping.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroRunning.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroRunning.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroSit.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroSit.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Mage/HeroFalling.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Mage/HeroFalling.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Hero.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dev Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dev Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +32,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Movement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/DynamicMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -46,10 +60,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12548">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="12548" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -65,6 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604161639380</updated>
       <workItem from="1604161655209" duration="8700000" />
+      <workItem from="1604247631304" duration="1196000" />
     </task>
     <servers />
   </component>
