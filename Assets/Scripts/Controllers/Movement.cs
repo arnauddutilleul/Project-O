@@ -1,9 +1,12 @@
 using UnityEngine;
 
-public abstract class Movement : MonoBehaviour
+namespace Controllers
 {
-    public abstract void Move(float horizontal, float vertical);
-    public abstract void Jump();
+    public abstract class Movement : MonoBehaviour
+    {
+        public abstract void Move(float horizontal, float vertical);
+        public abstract void Jump();
     
-    public abstract void Sit();
+        public abstract void Sit();
+    }
 }
