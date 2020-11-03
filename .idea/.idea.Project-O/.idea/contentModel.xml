@@ -477,6 +477,10 @@
             <e p="ObjectPool.cs" t="Include" />
             <e p="Pooled.cs" t="Include" />
           </e>
+          <e p="Sounds" t="Include">
+            <e p="AudioManager.cs" t="Include" />
+            <e p="AudioMixer.cs" t="Include" />
+          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">

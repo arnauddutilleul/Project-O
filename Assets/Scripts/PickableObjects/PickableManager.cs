@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using HealthManagement;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace PickableObjects
 {
@@ -10,6 +11,7 @@ namespace PickableObjects
         private readonly Dictionary<GameObject, int> _inventory = new Dictionary<GameObject, int>();
         [SerializeField] private Health health;
         [SerializeField] private RedPotionsText redPotionsUI;
+        [SerializeField] private UnityEvent healingSound;
 
 
         public void TakeObject(GameObject obj)
@@ -36,6 +38,7 @@ namespace PickableObjects
                 {
                     _inventory[obj] -= 1;
                     redPotionsUI.ChangeNumberPotions(-1);
+                    healingSound.Invoke();
                 }
                 if (_inventory[obj] == 0)
                     _inventory.Remove(obj);

@@ -8,6 +8,7 @@ namespace HealthManagement
         [SerializeField] private int currentHealth;
         [SerializeField] private int maxHealth;
         [SerializeField] private UnityEvent onDeath;
+        [SerializeField] private UnityEvent damageSound;
 
         private void Start()
         {
@@ -18,6 +19,7 @@ namespace HealthManagement
         {
             currentHealth -= damage;
             HealthManager.Instance.ModifyHealth(currentHealth);
+            damageSound.Invoke();
             if (currentHealth <= 0)
             {
                 //Death Animation
