@@ -42,19 +42,34 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+<<<<<<< HEAD
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Collisions/OnCollisionDestroy.cs" root0="FORCE_HIGHLIGHTING" />
+=======
+<<<<<<< Updated upstream
+>>>>>>> dev
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthManagement/Damage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PickableObjects/RedPotionsText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PickableObjects/PickableManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DropTable/Drop.cs" root0="FORCE_HIGHLIGHTING" />
+<<<<<<< HEAD
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pooling/GameObjectExtension.cs" root0="FORCE_HIGHLIGHTING" />
+=======
+=======
+    <setting file="file://$PROJECT_DIR$/Assets/Environment/Standard Assets/Utility/SimpleActivatorMenu.cs" root0="FORCE_HIGHLIGHTING" />
+>>>>>>> Stashed changes
+>>>>>>> dev
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/DynamicMovement.cs" />
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/LevelLoader.cs" />
+>>>>>>> dev
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthManagement/IDamageable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DropTable/DropTable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DropTable/Drop.cs" />
@@ -74,11 +89,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PickableObjects/PickableManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthManagement/HealthManager.cs" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PickableObjects/RedPotionsText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthManagement/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/LevelLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthManagement/Damage.cs" />
+=======
+=======
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Environment/Standard Assets/Utility/SimpleActivatorMenu.cs" />
+>>>>>>> Stashed changes
+>>>>>>> dev
       </list>
     </option>
   </component>
@@ -92,7 +114,10 @@
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -101,22 +126,30 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="selectedOptions">
-        <set />
-      </option>
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
+<<<<<<< HEAD
       <option name="pid" />
+=======
+<<<<<<< Updated upstream
+      <option name="pid" value="5016" />
+>>>>>>> dev
       <option name="selectedOptions">
         <set />
       </option>
+=======
+      <option name="pid" />
+>>>>>>> Stashed changes
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="037780d3-4145-403d-a571-bc16cc3e7567" name="Default Changelist" comment="" />
@@ -126,14 +159,22 @@
       <updated>1604161639380</updated>
       <workItem from="1604161655209" duration="8700000" />
       <workItem from="1604247631304" duration="1196000" />
+<<<<<<< Updated upstream
       <workItem from="1604335102494" duration="5641000" />
+<<<<<<< HEAD
       <workItem from="1604358129641" duration="7822000" />
       <workItem from="1604397561344" duration="2402000" />
+=======
+=======
+      <workItem from="1604333232362" duration="13000" />
+      <workItem from="1604333330394" duration="404000" />
+>>>>>>> Stashed changes
+>>>>>>> dev
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
