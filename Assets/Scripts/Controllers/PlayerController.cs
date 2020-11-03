@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 namespace Controllers
 {
@@ -6,7 +7,9 @@ namespace Controllers
     {
         [SerializeField] private Movement movement;
         private float _pressTime;
-        private const float _pressTimeTollerance = 0.5f;
+        private const float PressTimeTollerance = 0.5f;
+        [SerializeField] private UnityEvent decreaseRedPotions;
+
 
         // Update is called once per frame
         void Update()
@@ -22,7 +25,7 @@ namespace Controllers
             //Sit
             if(Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.DownArrow))
             {
-                if(_pressTime < _pressTimeTollerance)
+                if(_pressTime < PressTimeTollerance)
                 {
                     _pressTime += Time.deltaTime;
                 }
@@ -33,14 +36,19 @@ namespace Controllers
             }
             else if(Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.DownArrow))
             {
-                if(_pressTime < _pressTimeTollerance)
+                if(_pressTime < PressTimeTollerance)
                 {
                     movement.Sit();
                 }
  
                 _pressTime = 0f;
             }
-             
+            
+            //Potions E
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                decreaseRedPotions?.Invoke();
+            }
         }
     }
 }

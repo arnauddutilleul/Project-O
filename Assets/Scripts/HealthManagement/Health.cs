@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 
 namespace HealthManagement
@@ -15,7 +14,6 @@ namespace HealthManagement
             HealthManager.Instance.InitializationHealthBar();
         }
 
-        // Start is called before the first frame update
         public void TakeDamage(int damage)
         {
             currentHealth -= damage;
@@ -28,5 +26,19 @@ namespace HealthManagement
                 onDeath?.Invoke();
             }
         }
+
+        public bool Heal()
+        {
+            if (currentHealth < maxHealth)
+            {
+                currentHealth += 1;
+                HealthManager.Instance.ModifyHealth(currentHealth);
+                return true;
+            }
+            
+            Debug.Log("Max Life !");
+            return false;
+        }
+
     }
 }

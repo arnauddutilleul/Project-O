@@ -6,7 +6,7 @@ namespace GameManager
     {
         public void Load(string levelName)
         {
-            global::GameManager.GameManager.Instance.LoadScene(levelName);
+            GameManager.Instance.LoadScene(levelName);
         }
     }
 }
