@@ -9,6 +9,7 @@ namespace HealthManagement
         [SerializeField] private int maxHealth;
         [SerializeField] private UnityEvent onDeath;
         [SerializeField] private UnityEvent damageSound;
+        [SerializeField] private UnityEvent messageFullLife;
 
         private void Start()
         {
@@ -37,8 +38,7 @@ namespace HealthManagement
                 HealthManager.Instance.ModifyHealth(currentHealth);
                 return true;
             }
-            
-            Debug.Log("Max Life !");
+            messageFullLife?.Invoke();
             return false;
         }
 

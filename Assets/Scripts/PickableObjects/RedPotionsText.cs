@@ -6,7 +6,7 @@ namespace PickableObjects
     [RequireComponent(typeof(TMP_Text))]
     public class RedPotionsText : MonoBehaviour
     {
-        [SerializeField] private TMP_Text text;
+        private TMP_Text text;
         private int _numberPotions;
 
         private void Awake()

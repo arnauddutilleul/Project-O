@@ -12,7 +12,7 @@ namespace PickableObjects
         [SerializeField] private Health health;
         [SerializeField] private RedPotionsText redPotionsUI;
         [SerializeField] private UnityEvent healingSound;
-
+        [SerializeField] private UnityEvent messageNoPotions;
 
         public void TakeObject(GameObject obj)
         {
@@ -42,6 +42,10 @@ namespace PickableObjects
                 }
                 if (_inventory[obj] == 0)
                     _inventory.Remove(obj);
+            }
+            else
+            {
+                messageNoPotions?.Invoke();
             }
         }
     }

@@ -466,6 +466,9 @@
             <e p="HealthManager.cs" t="Include" />
             <e p="IDamageable.cs" t="Include" />
           </e>
+          <e p="Message" t="Include">
+            <e p="MessageUI.cs" t="Include" />
+          </e>
           <e p="PickableObjects" t="Include">
             <e p="IPickable.cs" t="Include" />
             <e p="Pickable.cs" t="Include" />
