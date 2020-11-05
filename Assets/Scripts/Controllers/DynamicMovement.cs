@@ -18,7 +18,6 @@ namespace Controllers
         private bool _grounded;
         private bool _sit;
         private RaycastHit[] groundHits = new RaycastHit[1];
-        private CapsuleCollider _capsuleCollider;
         private Rigidbody _rigidbody;
         private Transform _transform;
         private bool _jumping;
@@ -31,7 +30,6 @@ namespace Controllers
 
         private void Awake()
         {
-            _capsuleCollider = GetComponent<CapsuleCollider>();
             _transform = transform;
             _rigidbody = GetComponent<Rigidbody>();
         }
@@ -40,7 +38,6 @@ namespace Controllers
         {
             if (!_sit)
             {
-                _capsuleCollider.height = 0.8f;
                 horizontalSpeed = horizontalSpeed / 2;
                 animator.SetBool(SitAnimator, true);
                 _sit = true;
@@ -49,7 +46,6 @@ namespace Controllers
             {
                 horizontalSpeed = horizontalSpeed * 2;
                 animator.SetBool(SitAnimator, false);
-                _capsuleCollider.height = 1.15f;
                 _sit = false;
             }
         }
