@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Sounds;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace HealthManagement
@@ -10,6 +11,8 @@ namespace HealthManagement
         [SerializeField] private UnityEvent onDeath;
         [SerializeField] private UnityEvent damageSound;
         [SerializeField] private UnityEvent messageFullLife;
+        [SerializeField] private UnityEvent deathSound;
+        [SerializeField] private AudioMixerManager audio;
 
         private void Start()
         {
@@ -26,6 +29,8 @@ namespace HealthManagement
                 //Death Animation
                 //Block input of movement
                 //Wait for the end of animation
+                audio.Transition(AudioMixerManager.MusicMode.Lose);
+                deathSound?.Invoke();
                 onDeath?.Invoke();
             }
         }
