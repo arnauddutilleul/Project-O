@@ -9,6 +9,7 @@ namespace Controllers
         private float _pressTime;
         private const float PressTimeTollerance = 0.5f;
         [SerializeField] private UnityEvent decreaseRedPotions;
+        [SerializeField] private GameObject exitMenu;
 
 
         // Update is called once per frame
@@ -48,6 +49,12 @@ namespace Controllers
             if (Input.GetKeyDown(KeyCode.E))
             {
                 decreaseRedPotions?.Invoke();
+            }
+
+            //Menu Eschap
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                exitMenu.SetActive(true);
             }
         }
     }
