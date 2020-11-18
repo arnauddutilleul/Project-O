@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 
-namespace CameraController
+namespace CameraScripts
 {
     public class CameraAnimation : MonoBehaviour
     {
         public CharacterController playerController; 
-        public Animation anim; //Empty GameObject's animation component
+        public Animation anim;
         private bool isMoving;
     
         private bool left; 

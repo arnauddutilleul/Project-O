@@ -1,9 +1,8 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Controllers
 {
-    public class PlayerMovement : MonoBehaviour
+    public class PlayerMovement : Movement
     {
         public CharacterController controller;
 
@@ -17,6 +16,10 @@ namespace Controllers
 
         private Vector3 _velocity;
         private bool _isGrounded;
+        
+        private float _x;
+        private float _z;
+        private bool _jump;
 
         private Transform _transform;
 
@@ -29,29 +32,41 @@ namespace Controllers
         {
             _isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-            if (Input.GetKeyDown(KeyCode.LeftShift))
-                speed *= 2;
-            if (Input.GetKeyUp(KeyCode.LeftShift))
-                speed /= 2;
-
             if (_isGrounded && _velocity.y < 0)
             {
                 _velocity.y = -2f;
             }
-            
-            float x = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-            float z = Input.GetAxis("Vertical") * speed * Time.deltaTime;
 
-            Vector3 move = _transform.right * x + _transform.forward * z;
+            Vector3 move = _transform.right * _x + _transform.forward * _z;
             controller.Move(move);
 
-            if (Input.GetButtonDown("Jump") && _isGrounded)
+            if (_jump && _isGrounded)
             {
                 _velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+                _jump = false;
             }
 
             _velocity.y += gravity * Time.deltaTime;
             controller.Move(_velocity * Time.deltaTime);
+        }
+
+        public override void Move(float x, float z)
+        {
+            _x = x * speed * Time.deltaTime;
+            _z = z * speed * Time.deltaTime;
+        }
+
+        public override void Jump()
+        {
+            _jump = true;
+        }
+
+        public override void Run(bool state)
+        {
+            if (state)
+                speed *= 2;
+            else
+                speed /= 2;
         }
     }
 }

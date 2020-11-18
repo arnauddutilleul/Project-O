@@ -607,15 +607,223 @@
             </e>
           </e>
         </e>
+        <e p="Externals" t="Include">
+          <e p="Ultimate VFX" t="Include">
+            <e p="_DOCS" t="Include">
+              <e p="README - Action VFX.txt" t="Include" />
+              <e p="README - Advanced Particle Scaler.txt" t="Include" />
+              <e p="README - Particle Force Fields.txt" t="Include" />
+              <e p="README - Particle Plexus.txt" t="Include" />
+              <e p="README - Storm VFX.txt" t="Include" />
+              <e p="README - Ultimate VFX.txt" t="Include" />
+            </e>
+            <e p="Editor Extensions" t="Include">
+              <e p="_Common" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="ParticleEditorUtility.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Utilities" t="Include">
+                <e p="Multi-Asset Renamer" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="MultiAssetRenamer.cs" t="Include" />
+                  </e>
+                  <e p="Readme.txt" t="Include" />
+                </e>
+                <e p="Particle Playback" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="ParticlePlayback.cs" t="Include" />
+                    <e p="ParticlePlaybackEditorWindow.cs" t="Include" />
+                    <e p="ParticlePlaybackExtensions.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="Particle Scaler" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="ParticleScalerEditorWindow.cs" t="Include" />
+                    <e p="ParticleScalerExtensions.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="Particle Systems" t="Include">
+              <e p="_Common" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="_Demo" t="Include">
+                    <e p="DemoManager.cs" t="Include" />
+                    <e p="FPSDisplay.cs" t="Include" />
+                    <e p="FPSTest.cs" t="Include" />
+                    <e p="LoopingParticleSystemsManager.cs" t="Include" />
+                    <e p="MouseFollow.cs" t="Include" />
+                    <e p="MouseRotateCamera.cs" t="Include" />
+                    <e p="OneshotParticleSystemsManager.cs" t="Include" />
+                    <e p="ParticleManager.cs" t="Include" />
+                  </e>
+                  <e p="AnimatedLight.cs" t="Include" />
+                  <e p="Billboard.cs" t="Include" />
+                  <e p="CameraShake.cs" t="Include" />
+                  <e p="DestroyAfterTime.cs" t="Include" />
+                  <e p="DestroyOnParticlesDead.cs" t="Include" />
+                  <e p="DestroyOnTrailsDestroyed.cs" t="Include" />
+                  <e p="ParticleSystems.cs" t="Include" />
+                  <e p="ParticleSystemTimeRemap.cs" t="Include" />
+                  <e p="PerlinNoise.cs" t="Include" />
+                  <e p="RendererSortingOrder.cs" t="Include" />
+                  <e p="RewindParticleSystem.cs" t="Include" />
+                  <e p="RewindParticleSystemSimple.cs" t="Include" />
+                  <e p="RewindParticleSystemSuperSimple.cs" t="Include" />
+                  <e p="Rotator.cs" t="Include" />
+                  <e p="TrailRenderers.cs" t="Include" />
+                  <e p="TransformNoise.cs" t="Include" />
+                </e>
+                <e p="Shaders" t="Include">
+                  <e p="ASE Templates" t="Include">
+                    <e p="Particle Alpha Blend + TEXCOORD1.shader" t="Include" />
+                    <e p="Particle Alpha Blend Textureless.shader" t="Include" />
+                    <e p="Particle Anim Alpha Blend + MV Tex.shader" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Ultimate VFX" t="Include">
+                <e p="Demos" t="Include">
+                  <e p="Wallpapers" t="Include">
+                    <e p="Gravity Clock" t="Include">
+                      <e p="Scripts" t="Include">
+                        <e p="BillboardCameraPlaneUVFX.cs" t="Include" />
+                        <e p="GravityClockInteractivityUVFX.cs" t="Include" />
+                      </e>
+                    </e>
+                  </e>
+                </e>
+                <e p="Expansions" t="Include">
+                  <e p="XP - STORM" t="Include">
+                    <e p="Scripts" t="Include">
+                      <e p="StormVFXTerrainDemoCamera.cs" t="Include" />
+                      <e p="StormVFXTerrainDemoFollowTargetPosition.cs" t="Include" />
+                    </e>
+                  </e>
+                  <e p="XP - TITLES" t="Include">
+                    <e p="Scripts" t="Include">
+                      <e p="DemoManager_XPTitles.cs" t="Include" />
+                    </e>
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="Scripting" t="Include">
+              <e p="Effects" t="Include">
+                <e p="_Common" t="Include">
+                  <e p="CreateLUT.cs" t="Include" />
+                </e>
+                <e p="Particle Affectors" t="Include">
+                  <e p="Scripts" t="Include">
+                    <e p="AttractionParticleAffector.cs" t="Include" />
+                    <e p="Noise.cs" t="Include" />
+                    <e p="ParticleAffector.cs" t="Include" />
+                    <e p="TurbulenceParticleAffector.cs" t="Include" />
+                    <e p="VortexParticleAffector.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="Particle Flocking" t="Include">
+                  <e p="ParticleFlocking.cs" t="Include" />
+                </e>
+                <e p="Particle Force Fields" t="Include">
+                  <e p="Scripts" t="Include">
+                    <e p="AttractionParticleForceField.cs" t="Include" />
+                    <e p="Noise2.cs" t="Include" />
+                    <e p="ParticleForceField.cs" t="Include" />
+                    <e p="TurbulenceParticleForceField.cs" t="Include" />
+                    <e p="VortexParticleForceField.cs" t="Include" />
+                  </e>
+                  <e p="Scripts (DEMO ONLY)" t="Include">
+                    <e p="ParticleForceFieldsDemo.cs" t="Include" />
+                    <e p="ParticleForceFieldsDemo_CameraRig.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="Particle Lights" t="Include">
+                  <e p="Scripts" t="Include">
+                    <e p="ParticleLights.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="Particle Plexus" t="Include">
+                  <e p="Scripts" t="Include">
+                    <e p="ParticlePlexus.cs" t="Include" />
+                  </e>
+                  <e p="Scripts (DEMO ONLY)" t="Include">
+                    <e p="ParticlePlexusDemo_CameraRig.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="_Common" t="Include">
+                <e p="IEBase.cs" t="Include" />
+                <e p="MirzaPostProcessing.cs" t="Include" />
+              </e>
+              <e p="Image Effects" t="Include">
+                <e p="Resources" t="Include">
+                  <e p="Sharpen" t="Include">
+                    <e p="Sharpen.cs" t="Include" />
+                    <e p="Sharpen.shader" t="Include" />
+                  </e>
+                </e>
+                <e p="Tests" t="Include">
+                  <e p="Screen Rain.shader" t="Include" />
+                </e>
+              </e>
+              <e p="Particles" t="Include">
+                <e p="Add Soft" t="Include">
+                  <e p="AddSoft-Mult.shader" t="Include" />
+                </e>
+                <e p="Alpha Cutoff" t="Include">
+                  <e p="AlphaCutoff-Add.shader" t="Include" />
+                  <e p="AlphaCutoff-Alpha.shader" t="Include" />
+                </e>
+                <e p="Animation Blend" t="Include">
+                  <e p="AnimBlend-Add.shader" t="Include" />
+                </e>
+                <e p="Distance Fade" t="Include">
+                  <e p="DistanceFade-Add.shader" t="Include" />
+                  <e p="DistanceFade-Alpha.shader" t="Include" />
+                  <e p="DistanceFade-AnimBlendAdd.shader" t="Include" />
+                  <e p="DistanceFade-AnimBlendAlpha.shader" t="Include" />
+                </e>
+                <e p="Distortion" t="Include">
+                  <e p="Distortion-Add.shader" t="Include" />
+                  <e p="Distortion-Alpha.shader" t="Include" />
+                  <e p="TextureDistortion-Add.shader" t="Include" />
+                  <e p="TextureDistortion-Alpha.shader" t="Include" />
+                </e>
+                <e p="Intersection Highlight" t="Include">
+                  <e p="IntersectionHighlight-Add.shader" t="Include" />
+                  <e p="IntersectionHighlight-Alpha.shader" t="Include" />
+                </e>
+                <e p="Mask" t="Include">
+                  <e p="Mask-Alpha.shader" t="Include" />
+                </e>
+                <e p="No Fog" t="Include">
+                  <e p="NoFog-Add.shader" t="Include" />
+                  <e p="NoFog-Alpha.shader" t="Include" />
+                </e>
+              </e>
+              <e p="Standard" t="Include">
+                <e p="Standard-Terrain Rain 2.shader" t="Include" />
+                <e p="Standard-Terrain Rain.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
-          <e p="CameraController" t="Include">
+          <e p="CameraScripts" t="Include">
             <e p="CameraAnimation.cs" t="Include" />
-            <e p="CameraLook.cs" t="Include" />
+            <e p="CameraInput.cs" t="Include" />
+            <e p="CameraMovement.cs" t="Include" />
           </e>
           <e p="Collisions" t="Include">
             <e p="OnCollisionDestroy.cs" t="Include" />
           </e>
           <e p="Controllers" t="Include">
+            <e p="Movement.cs" t="Include" />
+            <e p="PlayerController.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
           </e>
           <e p="DropTable" t="Include">
@@ -627,20 +835,23 @@
             <e p="LevelLoader.cs" t="Include" />
             <e p="SingletonMb.cs" t="Include" />
           </e>
-          <e p="HealthManagement" t="Include">
-            <e p="Damage.cs" t="Include" />
-            <e p="Health.cs" t="Include" />
-            <e p="HealthManager.cs" t="Include" />
-            <e p="IDamageable.cs" t="Include" />
+          <e p="Menus" t="Include">
+            <e p="Editor" t="Include">
+              <e p="SlimUIWindow.cs" t="Include" />
+            </e>
+            <e p="Tech Menu" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="ToolTip.cs" t="Include" />
+                <e p="UIElementDragger.cs" t="Include" />
+                <e p="UIManagerTech.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="Blur.shader" t="Include" />
+              </e>
+            </e>
           </e>
           <e p="Message" t="Include">
             <e p="MessageUI.cs" t="Include" />
-          </e>
-          <e p="PickableObjects" t="Include">
-            <e p="IPickable.cs" t="Include" />
-            <e p="Pickable.cs" t="Include" />
-            <e p="PickableManager.cs" t="Include" />
-            <e p="RedPotionsText.cs" t="Include" />
           </e>
           <e p="Pooling" t="Include">
             <e p="GameObjectExtension.cs" t="Include" />
@@ -650,21 +861,6 @@
           <e p="Sounds" t="Include">
             <e p="AudioManager.cs" t="Include" />
             <e p="AudioMixerManager.cs" t="Include" />
-          </e>
-        </e>
-        <e p="SlimUI" t="Include">
-          <e p="Editor" t="Include">
-            <e p="SlimUIWindow.cs" t="Include" />
-          </e>
-          <e p="Tech Menu" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="ToolTip.cs" t="Include" />
-              <e p="UIElementDragger.cs" t="Include" />
-              <e p="UIManagerTech.cs" t="Include" />
-            </e>
-            <e p="Shaders" t="Include">
-              <e p="Blur.shader" t="Include" />
-            </e>
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">
