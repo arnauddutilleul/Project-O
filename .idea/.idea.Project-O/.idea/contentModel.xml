@@ -812,6 +812,14 @@
             </e>
           </e>
         </e>
+        <e p="Prefabs" t="Include">
+          <e p="Rusty Flashlight" t="Include">
+            <e p="Readme.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="FlashlightToggle.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="CameraScripts" t="Include">
             <e p="CameraAnimation.cs" t="Include" />

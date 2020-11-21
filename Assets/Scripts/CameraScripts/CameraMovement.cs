@@ -8,6 +8,7 @@ namespace CameraScripts
 
         [SerializeField] private Transform playerBody;
         
+        
         private float _xRotation = 0f;
         private float _mouseY;
         private float _mouseX;
