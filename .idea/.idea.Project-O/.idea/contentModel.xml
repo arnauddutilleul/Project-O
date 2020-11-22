@@ -812,14 +812,6 @@
             </e>
           </e>
         </e>
-        <e p="Prefabs" t="Include">
-          <e p="Rusty Flashlight" t="Include">
-            <e p="Readme.txt" t="Include" />
-            <e p="Scripts" t="Include">
-              <e p="FlashlightToggle.cs" t="Include" />
-            </e>
-          </e>
-        </e>
         <e p="Scripts" t="Include">
           <e p="CameraScripts" t="Include">
             <e p="CameraAnimation.cs" t="Include" />
@@ -838,10 +830,17 @@
             <e p="Drop.cs" t="Include" />
             <e p="DropTable.cs" t="Include" />
           </e>
+          <e p="Flashlight" t="Include">
+            <e p="FlashlightToggle.cs" t="Include" />
+          </e>
           <e p="GameManager" t="Include">
             <e p="GameManager.cs" t="Include" />
             <e p="LevelLoader.cs" t="Include" />
             <e p="SingletonMb.cs" t="Include" />
+          </e>
+          <e p="Inventory" t="Include">
+            <e p="Inventory.cs" t="Include" />
+            <e p="Takeable.cs" t="Include" />
           </e>
           <e p="Menus" t="Include">
             <e p="Editor" t="Include">
